@@ -1,6 +1,8 @@
 
 name: Site Health Check
-on: [push]
+on:
+  schedule:
+    - cron: '* * * * *'
 jobs:
   build:
     name: Build
